@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tourism landing page</title>
+        <link rel="stylesheet" href=".\css\style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link href="https://db.onlinewebfonts.com/c/89d11a443c316da80dcb8f5e1f63c86e?family=Bauhaus+93+V2" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <a href="/" class="logo">Explore</a>
+            <ul class="nav">
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Special Offers</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li class="booking"><a href="#">Booking <ion-icon name="add"></ion-icon></a></li>
+            </ul>
+            <a href="#" class="menu" onclick="toggleMenu()"><ion-icon name="grid"></ion-icon></a>
+        </header>
+
+        <ul class="nav-mobile">
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Booking <ion-icon name="add"></ion-icon></a></li>
+        </ul>
+
+        <div class="swiper banner-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="banner">
+                        <img src="./Images/India.jpeg">
+                        <div class="shade">
+                            <img src="./Images/map.png" class="map">
+                        </div>
+                        <div class="content-left">
+                            <h1>In</h1>
+                            <div class="description">
+                                <h3>Discover India</h3>
+                                <p>India is a land of breathtaking diversity, offering majestic mountains like the Himalayas, serene beaches along its vast coastlines, expansive deserts such as the Thar, the rich marine life of its seas, and picturesque islands like the Andaman and Nicobar. </p>
+                            </div>
+                        </div>
+                        <div class="content-right">
+                            <h1>d<span>i</span>a</h1>
+                            <p class="text-side">Explore The Diversity</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="banner">
+                        <img src="./Images/kashmir.jpg">
+                        <div class="shade"></div>
+                        <div class="drop">
+                            <video src="./videos/Kashmir.mp4" loop autoplay muted></video>
+                        </div>
+                        <div class="content-left">
+                            <h1>Kash</h1>
+                            <div class="description">
+                                <h3>Discover Kashmir</h3>
+                                <p>Kashmir, often called "Paradise on Earth," is renowned for its stunning natural beauty. Nestled in the Himalayas, it offers snow-capped mountains, lush green valleys, pristine lakes like Dal Lake, and enchanting gardens.</p>
+                            </div>
+                        </div>
+                        <div class="content-right">
+                            <h1>mi<span>r</span></h1>
+                            <p class="text-side">Explore The Diversity</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="banner">
+                        <img src="./Images/rajasthan.jpeg">
+                        <div class="shade"></div>
+                        <div class="drop">
+                            <video src="./videos/Rajasthan.mp4" loop autoplay muted></video>
+                        </div>
+                        <div class="content-left">
+                            <h1>Raja</h1>
+                            <div class="description">
+                                <h3>Discover Rajasthan</h3>
+                                <p>Rajasthan, the "Land of Kings," is a vibrant state known for its royal heritage, majestic forts, and sprawling deserts. The golden sands of the Thar Desert, magnificent palaces, colorful festivals, and rich traditions make it a captivating destination. </p>
+                            </div>
+                        </div>
+                        <div class="content-right">
+                            <h1>st<span>h</span>an</h1>
+                            <p class="text-side">Explore The Diversity</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="banner">
+                        <img src="./Images/Goa.jpeg">
+                        <div class="shade"></div>
+                        <div class="drop">
+                            <video src="./videos/Goa.mp4" loop autoplay muted></video>
+                        </div>
+                        <div class="content-left">
+                            <h1>Go</h1>
+                            <div class="description">
+                                <h3>Discover Goa</h3>
+                                <p>Goa, India's coastal paradise, is famed for its sun-kissed beaches, lively nightlife, and Portuguese-influenced architecture with palm-fringed shores, vibrant markets and a laid-back atmosphere. </p>
+                            </div>
+                        </div>
+                        <div class="content-right">
+                            <h1><span>a</span></h1>
+                            <p class="text-side">Explore The Diversity</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="banner">
+                        <img src="./Images/kerala.jpg">
+                        <div class="shade"></div>
+                        <div class="drop">
+                            <video src="./videos/Kerala.mp4" loop autoplay muted></video>
+                        </div>
+                        <div class="content-left">
+                            <h1>Ker</h1>
+                            <div class="description">
+                                <h3>Discover Kerala</h3>
+                                <p>Kerala, often called "God's Own Country," is a tropical haven known for its tranquil backwaters, lush green landscapes, and pristine beaches. </p>
+                            </div>
+                        </div>
+                        <div class="content-right">
+                            <h1>a<span>l</span>a</h1>
+                            <p class="text-side">Explore The Diversity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="control">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/swiper.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
